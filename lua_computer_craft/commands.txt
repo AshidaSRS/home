@@ -1,0 +1,142 @@
+Turtle: ([]->optional)
+
+turtle.craft(int quantity) -> craft with ingredients in the inventory
+turtle.forward() -> move forward
+turtle.up()
+turtle.back()
+turble.down()
+turtle.turnLeft()
+turtle.turnRight()
+turtle.select(slotNum) (1 is top left, 16 (9 in 1.33 and earlier) is bottom right)
+turtle.getSelectedSlot()
+turtle.getItemCount([slotNum])
+turtle.getItemSpace([slotNum]) how many slots for full stack
+turtle.getItemDetail([slotNum]) Returns the ID string, count and damage values of currently selected slot or, if specified, slotNum slot
+turtle.equipLeft() switch item in the left with the current slot
+turtle.equipRight() 
+turtle.attack()
+turtle.attackUp()
+turtle.attackDown()
+turtle.dig()
+turtle.digUp()
+turtle.digDown()
+turtle.place([string signText]) signText for signs
+turtle.placeUp()
+turtle.placeDown()
+turtle.detect()
+turtle.detectUp()
+turtle.detectDown()
+turtle.inspect()  ID & Metadata block
+turtle.inspectUp()
+turtle.inspectDown()
+turtle.compare()
+turtle.compareUp()
+turtle.compareDown()
+turtle.compareTo(slotNum) compare current and given
+turtle.drop([count])
+turtle.dropUp([count])
+turtle.dropDown([count])
+turtle.suck([amount]) pick an item stack of any number and places it in the selected block
+turtle.suckUp([amount])
+turtle.suckDown([amount])
+turtle.refuel([quantity])
+turtle.getFuelLevel()
+turtle.getFuelLimit()
+turtle.transferTo(slotNum, [quantity])
+
+Computer:
+
+Cntrl + T -> terminate program
+Cntrl + R -> reboot
+Cntrl + S -> Shutdown
+
+Monitors:
+
+term.write(string text)
+term.clear()
+term.clearLine()
+term.getCursorPos()
+term.setCursorPos(x,y)
+term.setCursorBlink(bool)
+term.isColor() -> Returns whether the terminal supports color.
+term.getSize
+term.scroll(int m)
+term.redirect(target)
+term.current()
+term.native()
+term.setTextColor(color)
+term.setBackgroundColor(color)
+monitor.setTextScale(scale)
+window.setVisible(bool)
+window.redraw()
+window.restoreCursor()
+window.getPosition()
+window.reposition(x,y, [width,heith])
+window.create(table parentTerm, number x, number y, number width, number height [, boolean visible])
+
+Peripheral:
+
+peripheral.isPresent(string side)
+peripheral.getType(string side)
+peripheral.getMethods(string side)
+peripheral.call(string side, string method, ...)
+peripheral.wrap(string side)
+peripheral.find(string type [, function fnFilter( name, object )])
+peripheral.getNames()
+
+
+Modem:
+
+modem.isOpen(number channel)	
+modem.open(number channel)	
+modem.close(number channel)	
+modem.closeAll()
+modem.transmit(number channel, number replyChannel, message)
+modem.isWireless()
+
+Rednet:
+
+rednet.open(string side)	Tells the computer that the side can be used for networking.
+rednet.close(string side)	Tells the computer that the side can no longer be used for networking.
+rednet.send(number receiverID, string message, [string protocol]) 	Sends a message "intended" for another system with a specific ID, using the currently opened sides. The receiverID is the ID number (note - not a string) of the computer you're sending the message to. Later versions or ComputerCraft allow some other data types as the message.
+rednet.broadcast(string message, [string protocol])	 Sends the message to all connected and open computers.
+rednet.receive([ [string protocolFilter, ] number timeout])	 Waits until a rednet message of the specified protocol has been received, or until timeout seconds have passed. Leave all arguments empty to wait for any message indefinitely. If only a single, numerical argument is passed, will wait that many seconds for a message of any protocol. Versions of ComputerCraft prior to 1.6 may return the distance to the transmitting computer - 1.6 or later returns message protocols instead, though distance can still be obtained via direct use of the Modem API.
+rednet.isOpen(string side)     Returns true if the wireless modem is open.
+rednet.host(string protocol, string hostname)	Registers hostname against protocol for the purposes of rednet.lookup(). Only available in ComputerCraft 1.6 and above.
+rednet.unhost(string protocol, string hostname)	Unregisters hostname from protocol. Only available in ComputerCraft 1.6 and above.
+rednet.lookup(string protocol, string hostname)	Searches the local network for systems registered with a matching hostname and/or protocol, and returns matching IDs found. Only available in ComputerCraft 1.6 and above.
+rednet.run()
+
+Printer:
+
+printer.newPage()	Starts a new page. Returns true if page got started, false if not.
+printer.endPage()		Ends the page and prints the page to the output tray. Returns true if page was ended, false if not.
+printer.write(string text)		Writes text to the paper, works the same way as term.write().
+printer.setCursorPos(number x, number y)		Sets the cursor position on the paper, works the same way as term.setCursorPos().
+printer.getCursorPos()		Returns the coordinates of the cursor on the paper, works the same way as term.getCursorPos().
+printer.getPageSize()		Returns the size of the paper, works the same way as term.getSize().
+printer.setPageTitle(string title)		Sets the title of the page.
+printer.getPaperLevel()		Returns the amount of paper available in the paper tray.
+printer.getInkLevel()
+
+Command:
+
+commands.exec(string command)  Executes the specified command, yields until the result is determined, then returns it.
+commands.execAsync(string command)		Executes the specified command, but doesn't yield. Queues a "task_complete" event after the command is executed.
+commands.list()		 Returns a numerically indexed table filled with strings representing acceptable commands for commands.exec() / commands.execAsync().
+commands.getBlockPosition()		Returns the MineCraft world co-ordinates of the computer running the command.
+commands.getBlockInfo(number x, number y, number z)	Returns a table containing info about the block at the specified world location. Keys are "name" (a string) and "metadata" (a number).
+
+Disk:
+
+disk.isPresent(string side)		Checks whether any item is in a disk drive.
+disk.hasData(string side)		Checks whether a Floppy Disk is in a disk drive.
+disk.getMountPath(string side)		Gets the directory name where the contents of the floppy disk can be accessed.
+disk.setLabel(string side, string label)		Sets the floppy disk's label.
+disk.getLabel(string side)		Gets the floppy disk's label.
+disk.getID(string side)		Gets the floppy disk's unique ID number.
+disk.hasAudio(string side)		Checks whether a music disk is in the drive.
+disk.getAudioTitle(string side)		Gets the title of the music disc in the drive.
+disk.playAudio(string side)		Starts playing the music disc in the drive.
+disk.stopAudio(string side)		Stops playing the music disc in the drive.
+disk.eject(string side)		Ejects any item currently in the drive, spilling it into the world as a loose item.
