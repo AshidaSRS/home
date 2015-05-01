@@ -1,12 +1,14 @@
 local Https = require "ssl.https"
 local helpers = require "OAuth.helpers"
 local Ltn12 = require "ltn12"
+json = (loadfile "JSON.lua")()
 
 local url = "https://api.imgflip.com/caption_image"
 local imageUrl = "https://imgflip.com/memegenerator/35076327/kicknorris"
 local name = ""
 local text_0 = ""
 local text_1 = ""
+
 
 function create_meme(imageID, text_up, text_down)
 	if text_up == nil then text_0 = ""..name.." has been kicked" else text_0 = text_up end
@@ -22,7 +24,7 @@ function create_meme(imageID, text_up, text_down)
 	local request_constructor = {
 		url = url,
 		method = "POST",
-		headers={}
+		headers={},
 		sink = Ltn12.sink.table(response_body),
 	}
 
@@ -35,11 +37,9 @@ function create_meme(imageID, text_up, text_down)
 	if not ok then
 		return nil, response_code, response_headers, response_status_line, response_body
 	end
-   print(table.concat(response_body))
-   return response_body.url
+	response_body = json:decode(table.concat(response_body))
+	return response_body.data.url
 end
-
-create_meme(35076327, 'test', 'test2')
 
 local function run(msg, matches)
 	local receiver = get_receiver(msg)
@@ -49,11 +49,12 @@ local function run(msg, matches)
    		 text_1 = matche[4]
   	end
   	if name ~= nil then
-    	local ok, meme = create_meme(35076327, text_0, text_1)
-    	if ok then
+	  local ok, meme = create_meme(35076327, text_0, text_1)
+	  if ok then
     		send_photo_from_url(receiver, meme)
-    	else
+	  else
     		return 'Chuck Norris had problems to kick'..name..', please try again later.' 
+	 end
 	else
 	    return 'Chuck Norris had problems to kick you, please try again later.' 
  	end
