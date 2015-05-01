@@ -35,10 +35,10 @@ function create_meme(imageID, text_up, text_down)
 
 	local ok, response_code, response_headers, response_status_line = Https.request(request_constructor)
 	if not ok then
-		return nil, response_code, response_headers, response_status_line, response_body
+		return nil, response_body
 	end
 	response_body = json:decode(table.concat(response_body))
-	return response_body.data.url
+	return ok, response_body.data.url
 end
 
 local function run(msg, matches)
