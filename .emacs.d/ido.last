@@ -1,0 +1,38 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/ashida/Documentos/Git/chat_clojure/src/" . "chat_mio/")
+ ("/home/ashida/Documentos/Git/chat_clojure/" . "src/")
+ ("/home/ashida/Documentos/Git/" . "chat_clojure/")
+ ("/home/ashida/Documentos/" . "Git/")
+ ("/home/ashida/" . "Documentos/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/ashida/Documentos/Git/chat_clojure/src/chat_mio/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "chat.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/ashida/Documentos/Git/chat_clojure/src/chat_mio/" (21833 5618 324054 146000) "#chat_nomio.clj#" "#chat.clj#" "chat.clj" "./" "../" ".#chat_nomio.clj" "core.clj" ".#core.clj" "#core.clj#")
+
+ ("/home/ashida/Documentos/Git/chat_clojure/src/" (21826 49237 423344 43000) "./" "../" "chat_mio/")
+
+ ("/home/ashida/Documentos/Git/chat_clojure/" (21826 49237 423344 43000) "README.md" "LICENSE" "target/" "doc/" "project.clj" "src/" ".git/" "./" "../" "test/")
+
+ ("/home/ashida/Documentos/Git/" (21833 20130 331102 319000) "emacs-for-clojure/" "pps/" "concurrencia/" "reval/" "digital-systems/" "chat_clojure/" "todo/" "ssoo/" "./" "../" "clojure-aleph-chat/" "home/" "Prueba0/")
+
+ ("/home/ashida/Documentos/" (21833 4840 20700 353000) "Git/" "./" "../")
+
+ ("/home/ashida/" (21833 20514 847779 94000) ".ICEauthority" ".zsh-update" ".viminfo" ".local/" ".m2/" "Documentos/" ".cache/" ".vboxclient-display.pid" ".vboxclient-draganddrop.pid" ".zcompdump-AshidaArchPor-5.0.7" ".bash_history" "Público/" ".bash_logout" ".themes/" ".gitconfig" ".zsh_history" "Música/" ".pki/" "Imágenes/" ".config/" ".vboxclient-clipboard.pid" "ArchivosArrastrados/" ".oh-my-zsh/" ".bash_profile" "Descargas/" ".mozilla/" "fontconfig/" ".ssh/" ".lein/" ".bashrc" ".vimrc" "./" ".vboxclient-seamless.pid" ".emacs.d/" "../" ".zshrc" ".lesshst" "Vídeos/" "Plantillas/" ".TelegramDesktop/" "Escritorio/" ".esd_auth" ".gnupg/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
