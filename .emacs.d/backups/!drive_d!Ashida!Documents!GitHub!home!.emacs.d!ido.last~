@@ -1,0 +1,44 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("d:/Ashida/Documents/GitHub/chat_clojure/src/" . "chat_mio/")
+ ("d:/Ashida/Documents/GitHub/chat_clojure/" . "src/")
+ ("d:/Ashida/Documents/GitHub/" . "chat_clojure/")
+ ("d:/Ashida/Documents/" . "GitHub/")
+ ("d:/Ashida/" . "Documents/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "d:/Ashida/Documents/GitHub/chat_clojure/src/chat_mio/"
+ "d:/Ashida/Documents/GitHub/chat_clojure/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "core.clj"
+ "LICENSE"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("d:/Ashida/Documents/GitHub/chat_clojure/src/chat_mio/" (21775 2603 0 0) "core.clj" ".#core.clj" ".#chat_nomio.clj" "#core.clj#" "#chat_nomio.clj#" "../" "./")
+
+ ("d:/Ashida/Documents/GitHub/chat_clojure/src/" (21775 2603 0 0) "chat_mio/" "../" "./")
+
+ ("d:/Ashida/Documents/GitHub/chat_clojure/" (21775 2603 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "doc/" ".git/" "../" "./")
+
+ ("d:/Ashida/Documents/GitHub/" (21813 8117 0 0) "Versiones AC/" "todo/" "ssoo/" "SIG-GameDev/" "reval/" "python/" "Prueba0/" "pps/" "lenguaje_go/" "home/" "digital-systems/" "concurrencia/" "clojure-aleph-chat/" "chat_clojure/" "../" "./")
+
+ ("d:/Ashida/" (21813 31057 0 0) "workspace/" "Videos/" "Poadcast/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.blf" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.2.regtrans-ms" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.1.regtrans-ms" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.0.regtrans-ms" "Music/" "InstallAnywhere/" "GameMakerPlayer/" "GameMaker-Studio 1.4/" "Downloads/" "Documents/" "Desktop/" "Application Data/" "AppData/" ".maplesoft/" ".m2/" ".lein/" "../" "./")
+
+ ("d:/Ashida/Documents/" (21831 21839 0 0) "Updater5/" "templates/" "saves/" "PT.conf" "My Games/" "LaTeX/" "Heroes of the Storm/" "GitHub/" "extensions/" "emacs/" "Electronic Arts/" "desktop.ini" "Colossal Order/" "Cisco/" "../" "./")
+
+ ("d:/Ashida/Documents/emacs/" (21831 21870 0 0) "var/" "share/" "libexec/" "emacs-24.4-bin-i686-pc-mingw32.zip.sig" "bin/" "../" "./")
+
+ ("d:/Ashida/Documents/emacs/bin/" (21579 19201 0 0) "runemacs.exe" "libXpm.dll" "grep-changelog" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-24.4.exe" "ebrowse.exe" "ctags.exe" "addpm.exe" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

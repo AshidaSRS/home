@@ -1,1 +1,1 @@
-("~/Documentos/Git/clojure-aleph-chat/")
+("d:/Ashida/Documents/GitHub/chat_clojure/" "~/Documentos/Git/clojure-aleph-chat/")
