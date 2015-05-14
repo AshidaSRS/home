@@ -37,6 +37,7 @@
     coffee-mode
     web-mode
     emmet-mode
+    smartscan
     ))
 
 (dolist (p my-packages)
@@ -80,3 +81,4 @@
 (load "setup-ruby.el")
 (load "setup-yaml.el")
 (load "setup-web.el")
+(load "setup-java.el")
