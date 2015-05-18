@@ -85,5 +85,64 @@
 (defn full-house?
   "Return true if the hand is a full-house"
   [hand]
-  
-)
+  (if (= [2 3] (sort (vals (frequencies (map rank hand)))))
+    true
+    false)
+ )
+
+;; Exercise 8
+(defn two-pairs?
+  "Return true if the hand have two-pairs"
+  [hand]
+  (let [hand_val (sort (vals (frequencies (map rank hand))))]
+    (if (or (= [1 2 2] hand_val) (= [1 4] hand_val))
+            true
+            false))
+ )
+
+;; Exercise 9
+(defn straight?
+  "Return true if the hand is straight"
+  [hand]
+  (let [hand_down (replace {14 1} (map rank hand)),
+        hand_up (replace {14 14} (map rank hand))]
+    (if (= (range (first (sort hand_down)) (+ (first (sort hand_down)) 5)) (sort hand_down))
+      true 
+      (if (= (range (first (sort hand_up)) (+ (first (sort hand_up)) 5)) (sort hand_up))
+        true
+        false))
+   )
+ )
+
+;; Exercise 10
+(defn straight-flush?
+  "Return true if the hand is straight and flush"
+  [hand]
+  (let [hand_down (replace {14 1} (map rank hand)),
+        hand_up (replace {14 14} (map rank hand))]
+    (if (= (range (first (sort hand_down)) (+ (first (sort hand_down)) 5)) (sort hand_down))
+      (if (flush? hand)
+        true
+        false)
+      (if (= (range (first (sort hand_up)) (+ (first (sort hand_up)) 5)) (sort hand_up))
+        (if (flush? hand)
+          true 
+          false)
+        false))
+   )
+ )
+(defn high-card? [hand]
+  true) ; All hands have a high card.
+
+;; Exercise 11
+(defn value
+  "Return the max value of a hand"
+  [hand]
+  (let [checkers #{[high-card? 0]  [pair? 1]
+                 [two-pairs? 2]  [three-of-a-kind? 3]
+                 [straight? 4]   [flush? 5]
+                 [full-house? 6] [four-of-a-kind? 7]
+                 [straight-flush? 8]}]
+    (let [funcs (map first checkers)]
+      (map #(filter % hand) funcs)))
+  )
