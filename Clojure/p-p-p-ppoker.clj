@@ -144,5 +144,5 @@
                  [full-house? 6] [four-of-a-kind? 7]
                  [straight-flush? 8]}]
     (let [funcs (map first checkers)]
-      (map #(filter % hand) funcs)))
-  )
+      (apply max (map #(let [[fun var] %] (if (fun hand) var -1)) x))))
+)
