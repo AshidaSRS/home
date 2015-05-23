@@ -86,4 +86,3 @@
 (load "setup-yaml.el")
 (load "setup-web.el")
 (load "setup-java.el")
-(load "setup-go.el")

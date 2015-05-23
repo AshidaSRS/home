@@ -1,1 +1,1 @@
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8 data ("d:/Ashida/Documents/GitHub/chat_clojure/" ("src/chat_mio/core.clj" "LICENSE")))
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8 data ("d:/Ashida/Documents/GitHub/chat_clojure/" ("src/chat_mio/core.clj" "LICENSE") "d:/Ashida/Documents/GitHub/home/" (".emacs.d/customizations/setup-go.el" ".emacs.d/init.el" "Go/helloworld.go" "Clojure/p-p-p-ppoker.clj") "d:/Ashida/Documents/GitHub/concurrencia/" ("Practicas/Practica1/src/ControlAccesoNavesMonitor.java")))

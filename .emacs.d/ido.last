@@ -2,6 +2,10 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("d:/Ashida/Documents/GitHub/home/.emacs.d/" . "customizations/")
+ ("d:/Ashida/Documents/GitHub/home/" . ".emacs.d/")
+ ("d:/Ashida/Documents/GitHub/" . "home/")
+ ("d:/Ashida/Documents/" . "GitHub/")
  ("/home/ashida/Documentos/Git/home/Clojure/predicates/" . "src/")
  ("/home/ashida/Documentos/Git/home/Clojure/" . "predicates/")
  ("/home/ashida/Documentos/Git/ssoo/DATSI/so/" . "filtrar.2014a/")
@@ -19,6 +23,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "d:/Ashida/Documents/GitHub/home/.emacs.d/"
+ "d:/Ashida/Documents/GitHub/home/Go/"
+ "d:/Ashida/Documents/GitHub/home/.emacs.d/customizations/"
  "/home/ashida/Documentos/Git/home/.emacs.d/"
  "/home/ashida/Documentos/Git/home/.emacs.d/customizations/"
  "/home/ashida/Documentos/Git/home/Go/"
@@ -37,9 +44,9 @@
 ;; ----- ido-work-file-list -----
 (
  "init.el"
- "setup-haskell.el"
- "setup-go.el"
  "helloworld.go"
+ "setup-go.el"
+ "setup-haskell.el"
  "predicates.clj"
  "p-p-p-ppoker.clj"
  "ui.el"
@@ -50,6 +57,22 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("d:/Ashida/Documents/GitHub/home/.emacs.d/customizations/" (21855 54495 0 0) "ui.el" "shell-integration.el" "setup-yaml.el" "setup-web.el" "setup-ruby.el" "setup-lua.el" "setup-js.el" "setup-java.el" "setup-haskell.el" "setup-go.el" "setup-css.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+
+ ("d:/Ashida/Documents/GitHub/home/.emacs.d/" (21855 54495 0 0) "url/" "session.104f1c1963460230f6143222412480663000000005340029" "session.1044ac12c5c9670007143212967343901100000020170036" "projectile.cache" "projectile-bookmarks.eld" "places" "init.el" "ido.last" "extras/" "elpa/" "customizations/" "cider-history" "backups/" "auto-save-list/" "ac-comphist.dat" ".smex-items" ".recentf" "../" "./")
+
+ ("d:/Ashida/Documents/GitHub/home/Go/" (21855 54495 0 0) "helloworld.go" "../" "./")
+
+ ("d:/Ashida/Documents/GitHub/home/" (21855 54495 0 0) "scripts/" "README.md" "lua/" "Java/" "html5/" "Go/" "Clojure/" ".git/" ".emacs.d/" "../" "./")
+
+ ("d:/Ashida/Documents/GitHub/" (21813 8117 0 0) "Versiones AC/" "todo/" "ssoo/" "SIG-GameDev/" "reval/" "python/" "Prueba0/" "pps/" "lenguaje_go/" "home/" "digital-systems/" "concurrencia/" "clojure-aleph-chat/" "chat_clojure/" "../" "./")
+
+ ("d:/Ashida/Documents/" (21848 47809 0 0) "Updater5/" "templates/" "saves/" "Rockstar Games/" "PT.conf" "My Games/" "LOLPBE/" "LaTeX/" "Heroes of the Storm/" "GitHub/" "FSViewer48/" "extensions/" "emacs/" "Electronic Arts/" "desktop.ini" "Colossal Order/" "Cisco/" "../" "./")
+
+ ("d:/Ashida/Documents/emacs/" (21831 21870 0 0) "var/" "share/" "libexec/" "emacs-24.4-bin-i686-pc-mingw32.zip.sig" "bin/" "../" "./")
+
+ ("d:/Ashida/Documents/emacs/bin/" (21579 19201 0 0) "runemacs.exe" "libXpm.dll" "grep-changelog" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-24.4.exe" "ebrowse.exe" "ctags.exe" "addpm.exe" "../" "./")
+
  ("/home/ashida/Documentos/Git/home/.emacs.d/" (21855 54261 861174 792000) "places" ".recentf" "projectile.cache" "session.1044db8f8e47a7ef8f143108260946711700000005250029" "cider-history" ".smex-items" "session.104f1c1963460230f6143222412480663000000005340029" "extras/" "customizations/" "ido.last" "session.102b1b102d7609fd8143108285638850900000005690029" "./" "ac-comphist.dat" "auto-save-list/" "backups/" "projectile-bookmarks.eld" "elpa/" "session.105f94d3cf3bb57f6d143142178027313800000006040030" "session.1041678f47ce2e5c1f143177302635502000000005540031" "../" "session.1044ac12c5c9670007143212967343901100000020170036" "init.el")
 
  ("/home/ashida/" (21855 54011 755653 971000) ".oh-my-zsh/" ".ICEauthority" ".bash_logout" "Imágenes/" ".lein/" ".vimrc" ".gitconfig" ".zcompdump-ArchPCM-5.0.7" "tdata/" ".cache/" "Documentos/" ".esd_auth" ".bash_history" "fontconfig/" "./" ".zsh-update" ".mozilla/" "Música/" ".vboxclient-draganddrop.pid" ".vboxclient-seamless.pid" ".zsh_history" "Público/" ".emacs.d/" "Plantillas/" "Descargas/" "Escritorio/" ".gnupg/" ".local/" ".config/" "Vídeos/" ".ssh/" ".m2/" ".vboxclient-display.pid" ".vboxclient-clipboard.pid" ".Skype/" "Telegram" ".adobe/" ".bashrc" ".zshrc" "../" ".TelegramDesktop/" ".viminfo" ".macromedia/" ".bash_profile" "Updater")
