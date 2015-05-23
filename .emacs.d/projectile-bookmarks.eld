@@ -1,1 +1,1 @@
-("~/Documentos/Git/home/" "~/Documentos/Git/concurrencia/" "~/Documentos/Git/ssoo/" "~/Documentos/Git/clojure-aleph-chat/")
+("~/Documentos/Git/home/" "~/Documentos/Git/home/Clojure/predicates/" "~/Documentos/Git/concurrencia/" "~/Documentos/Git/ssoo/" "~/Documentos/Git/clojure-aleph-chat/")

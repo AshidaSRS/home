@@ -38,6 +38,10 @@
     web-mode
     emmet-mode
     smartscan
+    ac-cider
+    go-mode
+    go-autocomplete
+    ac-haskell-process
     ))
 
 (dolist (p my-packages)

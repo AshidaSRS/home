@@ -1,23 +1,23 @@
 
 ;; ----- smex-history -----
 (
+ list-packages
  cider-jack-in
  package-install
  eclim-mode
  auto-complete
- list-packages
  ispell
  ispell-change-dictionary
 )
 
 ;; ----- smex-data -----
 (
- (cider-jack-in . 8)
+ (cider-jack-in . 20)
  (moe-theme-select-color . 1)
- (list-packages . 10)
+ (list-packages . 14)
  (eclim-mode . 2)
  (ispell . 2)
  (ispell-change-dictionary . 1)
  (auto-complete . 1)
- (package-install . 2)
+ (package-install . 3)
 )

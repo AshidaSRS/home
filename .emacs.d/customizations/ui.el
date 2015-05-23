@@ -29,3 +29,13 @@
 
 ;; Parenthesis mode
 (show-paren-mode 1)
+
+(global-set-key (kbd "M-S-<left>") 'windmove-left)
+(global-set-key (kbd "M-S-<right>") 'windmove-right)
+(global-set-key (kbd "M-S-<up>") 'windmove-up)
+(global-set-key (kbd "M-S-<down>") 'windmove-down)
+
+(global-set-key (kbd "M-s-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "M-s-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "M-s-<down>") 'shrink-window)
+(global-set-key (kbd "M-s-<up>") 'enlarge-window)
