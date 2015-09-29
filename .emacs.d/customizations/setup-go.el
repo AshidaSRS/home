@@ -1,30 +1,24 @@
-(require 'go-mode)
-(add-hook 'before-save-hook 'gofmt-before-save)
+;; GO
+(require 'go-autocomplete)
+(require 'auto-complete-config)
 
-;; remove unused imports with control c control r
-(add-hook 'go-mode-hook '(lambda ()
-  (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
+(setenv "GOPATH" "/home/ashida/go")
 
-;; Move the point to the imports block
-(add-hook 'go-mode-hook '(lambda ()
-  (local-set-key (kbd "C-c C-g") 'go-goto-imports)))
+(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
+(add-to-list 'load-path "~/go/src/github.com/dougm/goflymake")
+(require 'go-flymake)
 
-;; format the buffer acording with go rules
-(add-hook 'go-mode-hook '(lambda ()
-  (local-set-key (kbd "C-c C-f") 'gofmt)))
-(add-hook 'before-save-hook 'gofmt-before-save)
+(defun my-go-mode-hook ()
+    (setq gofmt-command "goimports")
+    (add-hook 'before-save-hook 'gofmt-before-save)
+    (if (not (string-match "go" compile-command))
+            (set (make-local-variable 'compile-command)
+                 "go build -v && go test -v && go vet"))
 
-;; shows the documentation of a package
-(add-hook 'go-mode-hook '(lambda ()
-  (local-set-key (kbd "C-c C-k") 'godoc)))
-
-;; go-oracle
-;; (load "$GOPATH/src/code.google.com/p/go.tools/cmd/oracle/oracle.el")
-;; (add-hook 'go-mode-hook 'go-oracle-mode)
+    (setq tab-width 2 indent-tabs-mode nil)
+    (local-set-key (kbd "M-.") 'godef-jump))
+(add-hook 'go-mode-hook 'my-go-mode-hook)
 
 
-;; go-code
-(add-hook 'go-mode-hook 'company-mode)
-(add-hook 'go-mode-hook (lambda ()
-  (set (make-local-variable 'company-backends) '(company-go))
-  (company-mode)))
+
+(provide 'go-settings)
