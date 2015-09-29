@@ -1,4 +1,8 @@
 ;; GO
+
+;;go get golang.org/x/tools/cmd/oracle
+;;go get -u github.com/dougm/goflymake
+
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 
