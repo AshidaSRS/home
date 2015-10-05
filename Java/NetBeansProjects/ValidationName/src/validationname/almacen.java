@@ -37,15 +37,15 @@ public class almacen extends UnicastRemoteObject implements ValidationInterfaz {
     @Override
     public String insertar(String name, String passwd) throws RemoteException {
         if(!almacen.containsKey(name)){
-        almacen.put(name, passwd);
-            return name; 
+            almacen.put(name, passwd);
+            return name;
         }
         else return "Fail, name alrready exists";
     }
 
     @Override
     public boolean validar(String name, String passwd) throws RemoteException {
-        return (almacen.containsValue(passwd) && almacen.containsKey(name));
+        return (almacen.containsValue(passwd) && almacen.containsKey(name) && almacen.get(name).equals(passwd));
     }
 
     @Override

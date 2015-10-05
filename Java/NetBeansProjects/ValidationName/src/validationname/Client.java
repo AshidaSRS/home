@@ -18,7 +18,6 @@ public class Client{
                         
                     System.out.println("[INFO] Login:"+remote.login("Ashida","A123"));
                     System.out.println("[INFO] Login:"+remote.login("Kamigari","A123"));
-                    System.out.println("[INFO] Login:"+remote.login("Eu","genio"));
                     
                     System.out.println("[IMPRESORA] Connected "+ imprimir.imprimirConectados());
                     //System.out.println("[INFO]" +remote.imprimir());
