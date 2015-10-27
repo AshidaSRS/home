@@ -10,6 +10,9 @@
 ;; Hide scroll
 (scroll-bar-mode -1)
 
+;;
+(set-face-attribute 'default nil :height 85)
+
 ;; Hide tool bar
 (tool-bar-mode -1)
 
