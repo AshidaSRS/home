@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sun.net.httpserver.HttpServer"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.io.IOError"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.ibm.icu.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="com.ibm.icu.util.SimpleTimeZone"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.users.UserServiceFactory"/>
+<fullyQualifiedTypeName name="com.google.api.server.spi.auth.common.User"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.users.User"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.users.UserService"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.crypto.KeyGenerator"/>
+<fullyQualifiedTypeName name="javax.crypto.SecretKey"/>
+<fullyQualifiedTypeName name="java.security.SecureRandom"/>
+<fullyQualifiedTypeName name="javax.crypto.Cipher"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.debug.ui.detail_formatters=com.google.gwt.core.client.debug.JsoInspector$JsoProperty,toString(),1
+org.eclipse.jdt.debug.ui.show_details=INLINE_FORMATTERS

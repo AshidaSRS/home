@@ -1,0 +1,2 @@
+gcc-multilib: /usr/share/man/man3/random.3.gz existe en el sistema de archivos
+gcc-multilib: /usr/share/man/man3/regex.3.gz existe en el sistema de archivos
