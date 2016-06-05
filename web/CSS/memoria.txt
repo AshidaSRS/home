@@ -1,0 +1,145 @@
+SERVIDOR DE MEMORIA:
+	Introduccion
+	Requisitos
+
+REGIONES DE MEMORIA DEL PROCESO
+	Memoria del proceso I
+	Memoria del proceso II
+	Imagen de Memoria
+	Regiones del proceso
+		Codigo
+		Datos
+		Pila
+	Operaciones sobre regiones
+		Creación
+		Liberación
+		Cambio de tamaño
+		Duplicado
+	Caracteriscitas de las regiones
+		Codigo
+		Datos con valor inicial
+		Datos sin valor inicial
+		pila
+	Otras regiones de la imagen creadas durante ejecucion
+		Heap
+		Memoria compartida
+		Fichero proyectado
+		Pilas de threads
+		Biblioteca dinamica
+	Creacion de regiones
+
+FICHERO EJECUTABLE
+	Secciones del ejecutable
+		Principales
+			Codigo
+			Datos con valor incial
+		Otras
+			Tabla de simbolos
+			Lista de bibliotecas dinamicas usadas
+	Variables Globales vs Locales
+		Globales
+			Estáticas
+			Creación al inicio
+			Existen durante toda la ejecución
+			Dirección fija en memoria y en ejecutable
+		Locales
+			Dinámicas
+			Creación al invocar función
+			Dirección es relativa al RAR
+			Recursiva, cada vez una dirección
+	Crear imagen desde ejecutable
+
+UTILIZACIÓN DE MEMORIA EN BRUTO
+	Obtencion de memoria en bruto
+	Utilización de memoria en bruto
+
+NECESIDADES DE MEMORIA DE UN PROCESO
+	Necesidades de memoria
+	Fichero ejecutable I
+	Fichero ejecutable II
+	Imagen de memoria al inicio
+	Imgen de memoria usando malloc
+	Ejemplos
+	Detalle del malloc
+	Parametros
+	Heap vs Bloq de activacion
+
+MEMORIA VIRTUAL
+	Real y Virtual
+	Páginas y Marcos
+	MMU (Memory management unit)
+	Memoria virtual
+	Espacio Virtual
+	Tabla de paginas (Arbol de Tablas)
+	Soporte Físico de la memoria virtual
+
+MEMORIA VIRTUAL (ADICIONAL)
+	Fallo de pagina
+	Buffering de paginas
+	Copia por asignacion
+	Hiperpaginacion I
+	Hiperpaginacion II
+	Duplicado de una region
+	Copy on write
+	Exec
+	Swap
+
+PROTECCION DE MEMORIA
+	Proteccion
+	Proteccion en maquina real
+	Proteccion en maquina virtual
+	Errores acceso a memoria
+
+MEMORIA COMPARTIDA
+	Compartir memoria
+	Direcciones en memoria compartida
+
+FICHERO PROYECTADO EN MEMORIA
+	Modos
+		Compartida
+		Privada
+
+BIBLIOTECAS DINAMICAS
+	Llamada  a procedimiento
+	Bibliotecas estáticas
+	Bibliotecas dinámicas I
+	Bibliotecas dinámicas II
+	Regiones para una lib. dinámica
+	Montaje al invocar el procedimiento
+	Ejemplos
+	
+SERVICIOS UNIX DE GESTION DE MEMORIA
+	Aumento de tamaño
+		int brk(void *addr)
+	Creacion y destruccion de regiones
+	Proyeccion de ficheros
+		mmap y munmap
+	Uso de memoria compartida
+		mmap
+		Otros
+	Montaje explicito lib. dinámica
+		dlopen
+	Bloquear paginas en memoria
+		mlock
+	Proyeccion de ficheros
+		Proyectar
+			void *mmap(void *addr, size_t len, int prot, int flags, int fildes, off_t off);
+		Desproyectar
+			void munmap(void *addr, size_t len);
+		Compartir memoria
+		Ejemplo
+	Montaje explicito de lib. dinámica
+		Montar
+			void *dlopen(cons char *filename, int flag);
+		Obtener punto de enlace
+			void *dlsym(void *handle, char *symbol);
+		Cerrar
+			int dlclose(void *handle);
+		Errores
+			cons char *dlerror(void);
+	Bloquear paginas en marcos de memoria
+		Bloquea
+			int mlock(void *addr, int len);
+		Desbloquea
+			int munlock(void *addr, int len);
+FIN
