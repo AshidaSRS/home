@@ -1,0 +1,36 @@
+/*Cuerpo princial de la pagina*/
+body {
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: purple;
+  box-shadow: 1300px 900px 10px black;
+  background: #84C4DC url('Images/fondo.jpg') no-repeat fixed 150px 100px;
+}
+/*Images*/
+#home{left:0px;width:46px;}
+#home{background:url('Images/318-27598.png') 0 0;}
+
+/*Barra de navegacion*/
+ul.navbar { list-style-type:none;  margin:0;  padding:0;  overflow:hidden;}
+ul.navbar li {float:left; background: white;  display:inline;  margin: 0.5em 0;  padding: 0.3em;  border-right: 1em solid black }
+ul.navbar a { text-decoration: none }
+
+#navlist{position:relative;}
+#navlist li{margin:0; padding:0; list-style:none; position:absolute; top:0;}
+#navlist li, #navlist a{height:44px; display:block;}
+
+/*Links*/
+a:link {color:green;}      /* unvisited link */
+a:visited {color:purple;}  /* visited link */
+a:hover {color:blue;}  /* mouse over link */
+a:active {color:white;}  /* selected link */
+
+address {margin-top: 15em}
+
+/*Estilos para parrafos, titulos, etc*/
+p.pene{text-align:left;color:red;}
+p.italic {font-style:italic;}
+
+h1 {padding-top: 2em; font-family: Comic, Geneva, Arial, SunSans-Regular, sans-serif; text-shadow: 5px 5px 5px gray; }
+h2 {text-shadow: 5px 5px 5px gray;}
+h3 {text-shadow: 5px 5px 5px gray;}
