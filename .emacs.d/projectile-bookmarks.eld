@@ -1,1 +1,0 @@
-("d:/Ashida/Documents/GitHub/home/" "d:/Ashida/Go/src/github.com/AshidaSRS/Go-things/" "d:/Ashida/Documents/GitHub/ssoo/" "d:/Ashida/Documents/GitHub/concurrencia/" "~/Documentos/Git/home/" "~/Documentos/Git/home/Clojure/predicates/" "~/Documentos/Git/concurrencia/" "~/Documentos/Git/ssoo/" "~/Documentos/Git/clojure-aleph-chat/")
